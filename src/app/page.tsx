@@ -7,7 +7,7 @@ export default function Home() {
 			<Container>
 				<div className={styles.development}>
 					<a
-						href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+						href="/partners"
 						// className={styles.card}
 						// target="_blank"
 						// rel="noopener noreferrer"

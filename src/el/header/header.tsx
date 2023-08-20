@@ -7,7 +7,7 @@ export const Header = () => {
 		<header className={styles.header}>
 			<Container>
 				<div className={styles.header__inner}>
-					<a href="https://mirosphere.ru/" className={styles.logo}>
+					<a href="/" className={styles.logo}>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -92,7 +92,7 @@ export const Header = () => {
 							>
 								Устав
 							</a>
-							<a href="#" className={styles.menu__item}>
+							<a href="/partners" className={styles.menu__item}>
 								Партнерам
 							</a>
 						</div>
