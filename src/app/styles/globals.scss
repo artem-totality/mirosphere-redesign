@@ -50,24 +50,27 @@ button {
 	font-family: Roboto;
 }
 
+@mixin selection {
+	&::selection {
+		color: $black;
+		background-color: $main-color;
+	}
+}
+
 body {
 	font-family: $main-font;
 	font-size: 20px;
 	font-weight: 300;
 	color: $main-color;
 	background-color: $black;
+	* {
+		@include selection;
+	}
 }
 
 @mixin title-font {
 	font-family: $headers-font;
 	font-weight: 700;
-}
-
-@mixin selection {
-	&::selection {
-		color: $black;
-		background-color: $main-color;
-	}
 }
 
 @mixin section-title {
