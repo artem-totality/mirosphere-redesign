@@ -1,0 +1,44 @@
+@mixin selection {
+	&::selection {
+		color: $black;
+		background-color: $main-color;
+	}
+}
+
+@mixin title-font {
+	font-family: $headers-font;
+	font-weight: 700;
+}
+
+@mixin section-title {
+	padding: 170px 0 56px;
+	font-size: 64px;
+	@include title-font;
+	@media (max-width: 1199px) {
+		padding: 80px 0 48px;
+		font-size: 60px;
+	}
+}
+
+@mixin element-decor {
+	backdrop-filter: blur(6px);
+	background: $background-color;
+	border: 2px solid $shady-main-color;
+	border-radius: 8px;
+}
+
+@mixin transition {
+	transition: 300ms all ease-in-out;
+}
+
+@mixin focus-color-hover {
+	&:hover {
+		color: $focus-color;
+	}
+}
+
+@mixin text-overflow {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

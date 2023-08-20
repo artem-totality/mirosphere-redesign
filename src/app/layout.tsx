@@ -1,6 +1,7 @@
 import '@/styles/normalize.scss';
 import '@/styles/globals.scss';
 import type { Metadata } from 'next';
+import { Header } from '@/el/header';
 import { Sparks } from '@/el/sparks';
 
 // ??????????????????????????????????????????
@@ -22,6 +23,7 @@ export default function RootLayout({
 	return (
 		<html lang="ru">
 			<body className={inter.className}>
+				<Header />
 				<>{children}</>
 				<Sparks />
 			</body>

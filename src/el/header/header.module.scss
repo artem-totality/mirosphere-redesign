@@ -1,0 +1,46 @@
+@import '@/styles/_mixins';
+@import '@/styles/_variables';
+
+.header {
+	border-bottom: 2px solid $shady-main-color;
+	&__inner {
+		display: flex;
+		min-height: 120px;
+		align-items: center;
+	}
+}
+
+.logo {
+	padding: 24px 0;
+	svg {
+		width: 55px;
+		height: 55px;
+		margin-left: -5px;
+		vertical-align: -36%;
+	}
+	&__title {
+		margin-left: 8px;
+		font-size: 48px;
+		@include title-font;
+	}
+}
+
+.menu {
+	height: 100%;
+	margin-left: auto;
+	padding-top: 7px;
+	&__list {
+		display: flex;
+		height: 100%;
+		align-items: stretch;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+	}
+	&__item + .menu__item {
+		margin-left: 40px;
+	}
+}
+
+@import '@/styles/_media';
