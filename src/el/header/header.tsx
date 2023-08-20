@@ -24,8 +24,8 @@ export const Header = () => {
 									gradientTransform="matrix(1 0 0 -1 0 -1227.23)"
 									gradientUnits="userSpaceOnUse"
 								>
-									<stop offset="0.63" stop-color="#f1dd97"></stop>
-									<stop offset="1" stop-color="#cbad59"></stop>
+									<stop offset="0.63" stopColor="#f1dd97"></stop>
+									<stop offset="1" stopColor="#cbad59"></stop>
 								</linearGradient>
 								<linearGradient
 									id="48x48_svg__a"
@@ -36,8 +36,8 @@ export const Header = () => {
 									gradientTransform="matrix(1 0 0 -1 0 -1227.23)"
 									gradientUnits="userSpaceOnUse"
 								>
-									<stop offset="0" stop-color="#f1dd97"></stop>
-									<stop offset="1" stop-color="#cbad59"></stop>
+									<stop offset="0" stopColor="#f1dd97"></stop>
+									<stop offset="1" stopColor="#cbad59"></stop>
 								</linearGradient>
 								<linearGradient
 									id="48x48_svg__c"
