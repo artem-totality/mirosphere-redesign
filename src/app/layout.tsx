@@ -2,6 +2,7 @@ import '@/styles/normalize.scss';
 import '@/styles/globals.scss';
 import type { Metadata } from 'next';
 import { Header } from '@/el/header';
+import { Footer } from '@/el/footer';
 import { Sparks } from '@/el/sparks';
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({
 			<body>
 				<Header />
 				<>{children}</>
+				<Footer />
 				<Sparks />
 			</body>
 		</html>
