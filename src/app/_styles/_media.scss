@@ -10,16 +10,14 @@
 			padding-bottom: 24px;
 		}
 	}
-	.main {
+	.motto {
 		&__title {
+			margin-bottom: -32px;
 			font-size: 136px;
 		}
 	}
 	.card {
 		padding: 30px 36px;
-		&--main {
-			margin-top: -32px;
-		}
 	}
 	.typing-area {
 		min-height: 470px;
@@ -39,16 +37,14 @@
 }
 
 @media (max-width: 900px) {
-	.main {
+	.motto {
 		&__title {
+			margin-bottom: -26px;
 			font-size: 90px;
 		}
 	}
 	.card {
 		padding: 6px 16px;
-		&--main {
-			margin-top: -26px;
-		}
 	}
 	.typing-area {
 		min-height: 420px;
@@ -119,16 +115,14 @@
 			margin-left: 0;
 		}
 	}
-	.main {
+	.motto {
 		&__title {
+			margin-bottom: -16px;
 			font-size: 52px;
 		}
 	}
 	.card {
 		padding: 0;
-		&--main {
-			margin-top: -16px;
-		}
 	}
 	.typing-area {
 		min-height: 270px;

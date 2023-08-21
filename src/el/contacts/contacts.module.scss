@@ -1,0 +1,122 @@
+@import '@/styles/_variables';
+@import '@/styles/_mixins';
+
+.contacts {
+	&__inner {
+		padding: 35px 0 120px;
+	}
+	&__info {
+		display: flex;
+		&-left {
+			min-width: 420px;
+			font-size: 29px;
+			line-height: 37px;
+		}
+		&-right {
+			display: flex;
+			flex-direction: column;
+			margin-left: 40px;
+		}
+		&-offer {
+			margin-bottom: 28px;
+			font-size: 56px;
+			line-height: 60px;
+			@include title-font;
+			color: $shady-main-color;
+			span {
+				color: $main-color;
+			}
+		}
+	}
+	&__form {
+		textarea,
+		input {
+			display: block;
+			position: relative;
+			width: 100%;
+			max-width: 570px;
+			margin-bottom: 24px;
+			padding: 32px 22px 14px;
+			line-height: 21px;
+			font-weight: inherit;
+			color: inherit;
+			@include element-decor;
+			&::placeholder {
+				/* Chrome, Firefox, Opera, Safari 10.1+ */
+				color: $shady-main-color;
+				opacity: 1; /* Firefox */
+			}
+		}
+		a {
+			margin-bottom: 24px;
+			border-bottom: 1px solid $shady-main-color;
+			color: $shady-main-color;
+		}
+		button {
+			display: block;
+			width: 100%;
+			max-width: 570px;
+			padding: 26px;
+			color: inherit;
+			font-size: 24px;
+			font-weight: 700;
+			cursor: pointer;
+			@include element-decor;
+			@include transition;
+			&:hover {
+				border-color: $main-color;
+			}
+		}
+	}
+}
+
+@media (max-width: 1199px) {
+	.contacts {
+		&__info {
+			&-left {
+				min-width: 400px;
+			}
+			&-offer {
+				font-size: 52px;
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.contacts {
+		&__inner {
+			padding-bottom: 80px;
+		}
+		&__info {
+			&-left {
+				min-width: 200px;
+				font-size: 25px;
+			}
+			&-right {
+				margin-left: 24px;
+			}
+			&-offer {
+				font-size: 46px;
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.contacts {
+		&__info {
+			flex-direction: column;
+			&-left {
+				margin-bottom: 24px;
+				font-size: 24px;
+			}
+			&-right {
+				margin-left: 0;
+			}
+			&-offer {
+				font-size: 42px;
+			}
+		}
+	}
+}
