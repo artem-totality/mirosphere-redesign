@@ -9,7 +9,7 @@ export const Footer = () => {
 				<Container>
 					<div className={styles.footer__inner}>
 						<div className={styles.footer__copyrights}>
-							©&nbsp;2023&nbsp;ООО&nbsp;"Миросфера"
+							©&nbsp;2023&nbsp;ООО&nbsp; &#34;Миросфера&#34;
 						</div>
 						<div className={styles.footer__text}>
 							Создано при поддержке открытого сообщества разработчиков

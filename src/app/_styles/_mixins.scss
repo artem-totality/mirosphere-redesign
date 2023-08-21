@@ -10,16 +10,6 @@
 	font-weight: 700;
 }
 
-@mixin section-title {
-	padding: 170px 0 56px;
-	font-size: 64px;
-	@include title-font;
-	@media (max-width: 1199px) {
-		padding: 80px 0 48px;
-		font-size: 60px;
-	}
-}
-
 @mixin element-decor {
 	backdrop-filter: blur(6px);
 	background: $background-color;

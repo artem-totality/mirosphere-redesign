@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from '@/el/container';
+import { SectionTitle } from '@/el/section-title';
 import { Card } from '@/el/card';
 import styles from './roles.module.scss';
 
@@ -8,7 +9,7 @@ export const Roles = () => {
 		<section className={styles.roles}>
 			<Container>
 				<div className={styles.roles__inner}>
-					<div className={styles.roles__title}>Роли:</div>
+					<SectionTitle>Роли:</SectionTitle>
 					<div className={styles.roles__content}>
 						<div className={styles.roles__item}>
 							<Card>

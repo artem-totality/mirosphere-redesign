@@ -77,7 +77,7 @@ export const Header = () => {
 					</a>
 					<nav className={styles.menu}>
 						<div className={styles.menu__list}>
-							<a href="https://mirosphere.ru/" className={styles.menu__item}>
+							<a href="/" className={styles.menu__item}>
 								Главная страница
 							</a>
 							<a
