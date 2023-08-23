@@ -80,18 +80,6 @@ export const Header = () => {
 							<a href="/" className={styles.menu__item}>
 								Главная страница
 							</a>
-							<a
-								href="https://mirosphere.ru/docs/order"
-								className={styles.menu__item}
-							>
-								Регламент
-							</a>
-							<a
-								href="https://mirosphere.ru/docs/rules"
-								className={styles.menu__item}
-							>
-								Устав
-							</a>
 							<a href="/partners" className={styles.menu__item}>
 								Партнерам
 							</a>
