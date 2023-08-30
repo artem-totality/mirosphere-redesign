@@ -53,19 +53,7 @@
 			color: $shady-main-color;
 		}
 		button {
-			display: block;
-			width: 100%;
-			max-width: 570px;
-			padding: 26px;
-			color: inherit;
-			font-size: 24px;
-			font-weight: 700;
-			cursor: pointer;
-			@include element-decor;
-			@include transition;
-			&:hover {
-				border-color: $main-color;
-			}
+			@include button;
 		}
 	}
 }

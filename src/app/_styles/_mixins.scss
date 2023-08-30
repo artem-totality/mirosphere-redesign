@@ -10,6 +10,14 @@
 	font-weight: 700;
 }
 
+@mixin section-subtitle {
+	font-size: 36px;
+	@include title-font;
+	@media (max-width: 900px) {
+		font-size: 24px;
+	}
+}
+
 @mixin element-decor {
 	backdrop-filter: blur(6px);
 	background: $background-color;
@@ -31,4 +39,25 @@
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+@mixin section-info {
+	font-size: 29px;
+	line-height: 37px;
+}
+
+@mixin button {
+	display: block;
+	width: 100%;
+	max-width: 570px;
+	padding: 26px;
+	color: inherit;
+	font-size: 24px;
+	font-weight: 700;
+	cursor: pointer;
+	@include element-decor;
+	@include transition;
+	&:hover {
+		border-color: $main-color;
+	}
 }
