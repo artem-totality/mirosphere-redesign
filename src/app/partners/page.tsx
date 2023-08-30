@@ -1,5 +1,5 @@
 import { Roles } from '@/el/roles';
-import { Contacts } from '@/el/contacts';
+import { PartnersContacts } from '@/el/partners-contacts';
 import { Motto } from '@/el/motto';
 
 export default function Partners() {
@@ -7,7 +7,7 @@ export default function Partners() {
 		<>
 			<Motto />
 			<Roles />
-			<Contacts />
+			<PartnersContacts />
 		</>
 	);
 }

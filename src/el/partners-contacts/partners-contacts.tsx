@@ -1,26 +1,26 @@
 import React from 'react';
 import { Container } from '@/el/container';
 import { SectionTitle } from '@/el/section-title';
-import styles from './contacts.module.scss';
+import styles from './partners-contacts.module.scss';
 
-export const Contacts = () => {
+export const PartnersContacts = () => {
 	return (
-		<section className={styles.contacts}>
+		<section className={styles['partners-contacts']}>
 			<Container>
-				<div className={styles.contacts__inner}>
+				<div className={styles['partners-contacts__inner']}>
 					<SectionTitle>Контакты:</SectionTitle>
-					<div className={styles.contacts__info}>
-						<div className={styles['contacts__info-left']}>
+					<div className={styles['partners-contacts__info']}>
+						<div className={styles['partners-contacts__info-left']}>
 							Разработка web&#8209;приложений любой сложности под ключ
 						</div>
-						<div className={styles['contacts__info-right']}>
-							<div className={styles['contacts__info-offer']}>
+						<div className={styles['partners-contacts__info-right']}>
+							<div className={styles['partners-contacts__info-offer']}>
 								Мы всегда ищем <span>новых членов,</span> которые привнесут в
 								нашу команду энергию, креативность и страсть.
 								<span>Как вы думаете,</span> у вас есть то, что нужно? Будем
 								рады видеть <span>ваше резюме</span>!
 							</div>
-							<form className={styles.contacts__form}>
+							<form className={styles['partners-contacts__form']}>
 								<input
 									type="text"
 									placeholder="ваша электронная почта"
@@ -35,7 +35,10 @@ export const Contacts = () => {
 									placeholder="пару слов о вашем опыте"
 									name="job-experience"
 								></textarea>
-								<a href="#" className={styles['contacts__form-file-upload']}>
+								<a
+									href="#"
+									className={styles['partners-contacts__form-file-upload']}
+								>
 									прикрепите ваше резюме
 								</a>
 								<button type="submit">Отправить</button>
