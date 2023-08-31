@@ -1,6 +1,6 @@
-import { Roles } from '@/el/roles';
-import { PartnersContacts } from '@/el/partners-contacts';
-import { Motto } from '@/el/motto';
+import { Roles } from '@/components/roles';
+import { PartnersContacts } from '@/components/partners-contacts';
+import { Motto } from '@/components/motto';
 
 export default function Partners() {
 	return (

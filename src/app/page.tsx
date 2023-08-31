@@ -1,5 +1,5 @@
-import { Development } from '@/el/development';
-import { Contacts } from '@/el/contacts';
+import { Development } from '@/components/development';
+import { Contacts } from '@/components/contacts';
 
 export default function Home() {
 	return (

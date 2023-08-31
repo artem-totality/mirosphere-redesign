@@ -6,7 +6,7 @@ import styles from './development.module.scss';
 
 export const Development = () => {
 	return (
-		<main>
+		<section>
 			<Container>
 				<SectionTitle>Главная страница в процессе разработки</SectionTitle>
 				<div className={styles.development}>
@@ -20,6 +20,6 @@ export const Development = () => {
 					</Card>
 				</div>
 			</Container>
-		</main>
+		</section>
 	);
 };

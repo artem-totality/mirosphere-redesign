@@ -1,8 +1,8 @@
 import '@/styles/normalize.scss';
 import '@/styles/globals.scss';
 import type { Metadata } from 'next';
-import { Header } from '@/el/header';
-import { Footer } from '@/el/footer';
+import { Header } from '@/components/header';
+import { Footer } from '@/components/footer';
 import { Sparks } from '@/el/sparks';
 
 export const metadata: Metadata = {

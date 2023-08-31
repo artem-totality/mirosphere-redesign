@@ -1,0 +1,100 @@
+@import '@/styles/_variables';
+@import '@/styles/_mixins';
+
+.contacts {
+	&__inner {
+		padding: 35px 0 120px;
+	}
+	&__info {
+		max-width: 480px;
+		margin-bottom: 28px;
+		@include section-info;
+	}
+	&__main {
+		display: flex;
+		gap: 24px;
+	}
+	&__links,
+	&__form {
+		width: 50%;
+	}
+	&__links-inner {
+		display: flex;
+		padding: 24px 0;
+		flex-direction: column;
+		font-size: 29px;
+	}
+	&__form {
+		&-text {
+			margin-bottom: 24px;
+			@include section-subtitle;
+		}
+		input {
+			display: block;
+			position: relative;
+			width: 100%;
+			max-width: 570px;
+			margin-bottom: 24px;
+			padding: 32px 22px 14px;
+			line-height: 21px;
+			font-weight: inherit;
+			color: inherit;
+			@include element-decor;
+			&::placeholder {
+				/* Chrome, Firefox, Opera, Safari 10.1+ */
+				color: $shady-main-color;
+				opacity: 1; /* Firefox */
+			}
+		}
+		button {
+			margin-bottom: 24px;
+			@include button;
+		}
+	}
+}
+
+.link {
+	margin-bottom: 24px;
+	svg {
+		width: 27px;
+		height: 27px;
+		margin-right: 11px;
+		vertical-align: -14%;
+	}
+}
+
+@media (max-width: 900px) {
+	.contacts {
+		&__main {
+			flex-direction: column;
+		}
+		&__links,
+		&__form {
+			width: 100%;
+		}
+		&__form-inner {
+			padding: 24px 0;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.contacts {
+		&__links,
+		&__form {
+			&-inner {
+				padding: 30px 4px;
+			}
+		}
+		&__links-inner {
+			font-size: 25px;
+		}
+	}
+	.link {
+		svg {
+			width: 23px;
+			height: 23px;
+			margin-right: 5px;
+		}
+	}
+}
