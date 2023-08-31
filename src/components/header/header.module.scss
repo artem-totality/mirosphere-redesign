@@ -43,4 +43,43 @@
 	}
 }
 
-@import '@/styles/_media';
+@media (max-width: 1199px) {
+	.header {
+		&__inner {
+			display: block;
+		}
+	}
+	.menu {
+		padding: 0;
+		&__item {
+			padding-bottom: $gap;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.logo {
+		padding-bottom: 12px;
+		svg {
+			width: 48px;
+			height: 48px;
+			margin-left: -5px;
+			vertical-align: -36%;
+		}
+		&__title {
+			font-size: 42px;
+		}
+	}
+	.menu {
+		padding-bottom: 12px;
+		&__list {
+			display: block;
+		}
+		&__item {
+			padding: 12px 0;
+		}
+		&__item + .menu__item {
+			margin-left: 0;
+		}
+	}
+}

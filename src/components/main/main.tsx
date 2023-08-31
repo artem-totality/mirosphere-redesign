@@ -1,29 +1,35 @@
 import React from 'react';
 import { Container } from '@/el/container';
-import { SectionTitle } from '@/el/section-title';
-import { Card } from '@/el/card';
+import ActiveClock from '@/el/active-clock';
 import styles from './main.module.scss';
 
 export const Main = () => {
 	return (
-		<main className="main">
+		<main className={styles.main}>
 			<Container>
-				<div className="main__inner">
-					<div className="main__content">
-						<div className="main__title">
+				<div className={styles.main__inner}>
+					<div className={styles.main__content}>
+						<div className={styles.main__title}>
 							Время течет
 							<br />
 							стремительно...
 						</div>
-						<div className="main__divider"></div>
-						<div className="main__subtitle">
+						<div className={styles.main__divider}></div>
+						<div className={styles.main__subtitle}>
 							Миросфера <span>- порядок жизни</span>
 						</div>
-						<a href="#" className="main__link">
+						<a href="#" className={styles.main__link}>
 							С нами
 						</a>
 					</div>
-					<div className="clock"></div>
+					<div className={styles.clock}>
+						<ActiveClock
+							activityValue={73}
+							peopleCount={221}
+							projectsCount={3}
+							slowTimeSpeed={1}
+						/>
+					</div>
 				</div>
 			</Container>
 		</main>
