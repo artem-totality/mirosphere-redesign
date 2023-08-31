@@ -1,0 +1,83 @@
+@import '@/styles/_variables';
+@import '@/styles/_mixins';
+
+.promo {
+	&__inner {
+		padding: 35px 0;
+	}
+	&__title {
+		@include section-liquid-title;
+	}
+	&__info {
+		max-width: 610px;
+		@include section-info;
+	}
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		gap: $gap;
+	}
+	&__item {
+		width: calc(50% - 12px);
+		&-inner {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+		&-top {
+			display: flex;
+			min-height: 124px;
+			margin-bottom: $step;
+			flex-grow: 1;
+		}
+		svg {
+			flex: 0 0 64px;
+			height: 64px;
+			margin-right: 6px;
+		}
+		&-title {
+			@include section-subtitle;
+		}
+		&-text {
+			line-height: 30px;
+		}
+	}
+}
+
+@media (max-width: 1199px) {
+	.promo {
+		&__item {
+			&-text {
+				min-height: 180px;
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.promo {
+		&__item {
+			&-top {
+				min-height: 85px;
+			}
+			svg {
+				flex-basis: 42px;
+				height: 42px;
+			}
+			&-text {
+				min-height: 270px;
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.promo {
+		&__item {
+			width: 100%;
+			&-text {
+				min-height: 120px;
+			}
+		}
+	}
+}

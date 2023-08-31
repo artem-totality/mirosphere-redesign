@@ -11,9 +11,7 @@
 		text-align: center;
 	}
 	&__title {
-		padding: 170px 0 56px;
-		font-size: 64px;
-		@include title-font;
+		@include section-liquid-title;
 	}
 	&__divider {
 		width: 66%;
@@ -41,27 +39,10 @@
 	align-items: center;
 }
 
-@media (max-width: 1199px) {
-	.main {
-		&__title {
-			padding: 80px 0 48px;
-			font-size: 60px;
-		}
-	}
-}
-
 @media (max-width: 900px) {
 	.main {
 		&__inner {
 			flex-direction: column-reverse;
-		}
-	}
-}
-
-@media (max-width: 600px) {
-	.main {
-		&__title {
-			font-size: 40px;
 		}
 	}
 }
