@@ -27,7 +27,7 @@
 	.footer {
 		&__inner {
 			padding: 100px 0 80px;
-			gap: 24px;
+			gap: $gap;
 			div {
 				width: calc(50% - 12px);
 			}

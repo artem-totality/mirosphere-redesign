@@ -7,7 +7,7 @@
 	.menu {
 		padding: 0;
 		&__item {
-			padding-bottom: 24px;
+			padding-bottom: $gap;
 		}
 	}
 	.motto {
@@ -72,7 +72,7 @@
 				font-size: 25px;
 			}
 			&-right {
-				margin-left: 24px;
+				margin-left: $gap;
 			}
 			&-offer {
 				font-size: 46px;
@@ -82,9 +82,9 @@
 	.footer {
 		&__inner {
 			padding: 100px 0 80px;
-			gap: 24px;
+			gap: $gap;
 			div {
-				width: calc(50% - 12px);
+				width: calc(50% - $gap / 2);
 			}
 		}
 	}
@@ -126,7 +126,7 @@
 	}
 	.typing-area {
 		min-height: 270px;
-		padding: 24px 16px;
+		padding: $gap 16px;
 		font-size: 32px;
 	}
 	.roles {
@@ -145,7 +145,7 @@
 		&__info {
 			flex-direction: column;
 			&-left {
-				margin-bottom: 24px;
+				margin-bottom: $gap;
 				font-size: 24px;
 			}
 			&-right {

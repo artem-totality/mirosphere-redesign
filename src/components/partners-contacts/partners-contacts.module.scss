@@ -35,7 +35,7 @@
 			position: relative;
 			width: 100%;
 			max-width: 570px;
-			margin-bottom: 24px;
+			margin-bottom: $gap;
 			padding: 32px 22px 14px;
 			line-height: 21px;
 			font-weight: inherit;
@@ -48,7 +48,7 @@
 			}
 		}
 		a {
-			margin-bottom: 24px;
+			margin-bottom: $gap;
 			border-bottom: 1px solid $shady-main-color;
 			color: $shady-main-color;
 		}
@@ -82,7 +82,7 @@
 				font-size: 25px;
 			}
 			&-right {
-				margin-left: 24px;
+				margin-left: $gap;
 			}
 			&-offer {
 				font-size: 46px;
@@ -96,7 +96,7 @@
 		&__info {
 			flex-direction: column;
 			&-left {
-				margin-bottom: 24px;
+				margin-bottom: $gap;
 				font-size: 24px;
 			}
 			&-right {

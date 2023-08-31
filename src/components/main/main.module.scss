@@ -12,7 +12,7 @@
 	}
 	&__main {
 		display: flex;
-		gap: 24px;
+		gap: $gap;
 	}
 	&__links,
 	&__form {
@@ -20,13 +20,13 @@
 	}
 	&__links-inner {
 		display: flex;
-		padding: 24px 0;
+		padding: $gap 0;
 		flex-direction: column;
 		font-size: 29px;
 	}
 	&__form {
 		&-text {
-			margin-bottom: 24px;
+			margin-bottom: $gap;
 			@include section-subtitle;
 		}
 		input {
@@ -34,7 +34,7 @@
 			position: relative;
 			width: 100%;
 			max-width: 570px;
-			margin-bottom: 24px;
+			margin-bottom: $gap;
 			padding: 32px 22px 14px;
 			line-height: 21px;
 			font-weight: inherit;
@@ -47,14 +47,14 @@
 			}
 		}
 		button {
-			margin-bottom: 24px;
+			margin-bottom: $gap;
 			@include button;
 		}
 	}
 }
 
 .link {
-	margin-bottom: 24px;
+	margin-bottom: $gap;
 	svg {
 		width: 27px;
 		height: 27px;
@@ -73,7 +73,7 @@
 			width: 100%;
 		}
 		&__form-inner {
-			padding: 24px 0;
+			padding: $gap 0;
 		}
 	}
 }
