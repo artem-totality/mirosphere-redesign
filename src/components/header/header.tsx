@@ -83,6 +83,9 @@ export const Header = () => {
 							<a href="/partners" className={styles.menu__item}>
 								Партнерам
 							</a>
+							<a href="/contacts" className={styles.menu__item}>
+								Контакты
+							</a>
 						</div>
 					</nav>
 				</div>

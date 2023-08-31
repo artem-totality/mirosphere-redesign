@@ -18,7 +18,7 @@ export const Main = () => {
 						<div className={styles.main__subtitle}>
 							Миросфера <span>- порядок жизни</span>
 						</div>
-						<a href="#" className={styles.main__link}>
+						<a href="/contacts" className={styles.main__link}>
 							С нами
 						</a>
 					</div>
