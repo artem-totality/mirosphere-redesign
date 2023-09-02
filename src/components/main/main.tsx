@@ -19,7 +19,7 @@ export const Main = () => {
 							Миросфера <span>- порядок жизни</span>
 						</div>
 						<a href="/contacts" className={styles.main__link}>
-							С нами
+							С нами :)
 						</a>
 					</div>
 					<div className={styles.clock}>
