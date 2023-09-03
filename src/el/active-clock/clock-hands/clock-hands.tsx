@@ -1,8 +1,10 @@
-import React, {useEffect, useMemo, useRef} from 'react';
+import React, { useEffect, useMemo, useRef } from 'react';
 
 export interface IClockHands {
 	slowTimeSpeed: number;
 }
+
+const PRETTY_TIME = '2023-07-02T10:08:00.001';
 
 const CENTER = {
 	x: 250,
@@ -15,7 +17,7 @@ interface TTime {
 	minutes: number;
 }
 
-export const ClockHands: React.FC<IClockHands> = ({slowTimeSpeed}) => {
+export const ClockHands: React.FC<IClockHands> = ({ slowTimeSpeed }) => {
 	const hourRef = useRef<any>(null);
 	const minuteRef = useRef<any>(null);
 	const secondRef = useRef<any>(null);
@@ -49,8 +51,8 @@ export const ClockHands: React.FC<IClockHands> = ({slowTimeSpeed}) => {
 	}, [slowTimeSpeed]);
 
 	const time = useMemo<TTime>(() => {
-		const date = slowTimeSpeed ? new Date() : new Date();
-		const seconds = date.getSeconds();
+		const date = slowTimeSpeed ? new Date(PRETTY_TIME) : new Date();
+		const seconds = new Date().getSeconds();
 		const minutes = date.getMinutes();
 		const hours = date.getHours();
 		const minutesTr = 60 * minutes + seconds;
@@ -74,9 +76,9 @@ export const ClockHands: React.FC<IClockHands> = ({slowTimeSpeed}) => {
 				y2="243.5813"
 				gradientTransform="matrix(1 0 0 -1 0 502)"
 			>
-				<stop offset="0" style={{stopColor: '#D1BF73'}} />
-				<stop offset="0.55" style={{stopColor: '#F9EDAD'}} />
-				<stop offset="1" style={{stopColor: '#BFA759'}} />
+				<stop offset="0" style={{ stopColor: '#D1BF73' }} />
+				<stop offset="0.55" style={{ stopColor: '#F9EDAD' }} />
+				<stop offset="1" style={{ stopColor: '#BFA759' }} />
 			</linearGradient>
 			<line
 				className="iconic-clock-hour-hand"
@@ -104,9 +106,9 @@ export const ClockHands: React.FC<IClockHands> = ({slowTimeSpeed}) => {
 				y2="290.2657"
 				gradientTransform="matrix(1 0 0 -1 0 502)"
 			>
-				<stop offset="0" style={{stopColor: '#D1BF73'}} />
-				<stop offset="0.55" style={{stopColor: '#F9EDAD'}} />
-				<stop offset="1" style={{stopColor: '#BFA759'}} />
+				<stop offset="0" style={{ stopColor: '#D1BF73' }} />
+				<stop offset="0.55" style={{ stopColor: '#F9EDAD' }} />
+				<stop offset="1" style={{ stopColor: '#BFA759' }} />
 			</linearGradient>
 			<line
 				className="iconic-clock-minute-hand"

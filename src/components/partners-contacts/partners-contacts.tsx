@@ -17,7 +17,7 @@ export const PartnersContacts = () => {
 							<div className={styles['partners-contacts__info-offer']}>
 								Мы всегда ищем <span>новых членов,</span> которые привнесут в
 								нашу команду энергию, креативность и страсть.
-								<span>Как вы думаете,</span> у вас есть то, что нужно? Будем
+								<span> Как вы думаете,</span> у вас есть то, что нужно? Будем
 								рады видеть <span>ваше резюме</span>!
 							</div>
 							<form className={styles['partners-contacts__form']}>

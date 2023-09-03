@@ -78,7 +78,7 @@ export const Header = () => {
 					<nav className={styles.menu}>
 						<div className={styles.menu__list}>
 							<a href="/" className={styles.menu__item}>
-								Главная страница
+								Главная
 							</a>
 							<a href="/partners" className={styles.menu__item}>
 								Партнерам

@@ -24,7 +24,7 @@ export const Main = () => {
 					</div>
 					<div className={styles.clock}>
 						<ActiveClock
-							activityValue={73}
+							activityValue={42}
 							peopleCount={221}
 							projectsCount={3}
 							slowTimeSpeed={1}
