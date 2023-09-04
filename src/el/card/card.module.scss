@@ -31,7 +31,7 @@
 
 @media (max-width: 600px) {
 	.card {
-		padding: 12px;
+		padding: $half-gap;
 		&--main {
 			margin-top: -16px;
 		}

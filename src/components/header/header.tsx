@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from '@/el/container';
+import { MenuList } from '@/el/menu-list';
 import styles from './header.module.scss';
 
 export const Header = () => {
@@ -77,15 +78,7 @@ export const Header = () => {
 					</a>
 					<nav className={styles.menu}>
 						<div className={styles.menu__list}>
-							<a href="/" className={styles.menu__item}>
-								Главная
-							</a>
-							<a href="/partners" className={styles.menu__item}>
-								Партнерам
-							</a>
-							<a href="/contacts" className={styles.menu__item}>
-								Контакты
-							</a>
+							<MenuList />
 						</div>
 					</nav>
 				</div>

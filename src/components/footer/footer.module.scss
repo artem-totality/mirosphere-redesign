@@ -29,7 +29,7 @@
 			padding: 100px 0 80px;
 			gap: $gap;
 			div {
-				width: calc(50% - 12px);
+				width: calc(50% - $half-gap);
 			}
 		}
 	}

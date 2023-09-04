@@ -11,7 +11,7 @@
 		gap: $gap;
 	}
 	&__item {
-		width: calc(50% - 12px);
+		width: calc(50% - $half-gap);
 	}
 }
 

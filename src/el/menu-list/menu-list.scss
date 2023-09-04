@@ -1,0 +1,24 @@
+@import '@/styles/_variables';
+
+.menu-item {
+	display: block;
+	padding: $half-gap 0;
+	& + .menu-item {
+		margin-left: $big-gap;
+	}
+}
+
+@media (max-width: 1199px) {
+	.menu-item {
+		margin-bottom: $half-gap;
+	}
+}
+
+@media (max-width: 600px) {
+	.menu-item {
+		margin-bottom: 0;
+		& + .menu-item {
+			margin-left: 0;
+		}
+	}
+}

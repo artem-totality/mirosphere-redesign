@@ -18,7 +18,7 @@
 		gap: $gap;
 	}
 	&__item {
-		width: calc(50% - 12px);
+		width: calc(50% - $half-gap);
 		&-inner {
 			display: flex;
 			flex-direction: column;
@@ -27,7 +27,7 @@
 		&-top {
 			display: flex;
 			min-height: 124px;
-			margin-bottom: $step;
+			margin-bottom: $big-gap;
 			flex-grow: 1;
 		}
 		svg {
