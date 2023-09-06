@@ -1,0 +1,26 @@
+@import '@/styles/_variables';
+@import '@/styles/_mixins';
+
+.ufo {
+	&__inner {
+		padding: 35px 0;
+		text-align: center;
+	}
+	&__img {
+		margin-top: $gap;
+		svg {
+			width: 300px;
+			height: 300px;
+		}
+	}
+	&__subtitle {
+		@include section-subtitle;
+	}
+	&__link {
+		margin: $gap 0;
+		padding: 0 $gap;
+		@include button;
+		width: auto;
+		display: inline-block;
+	}
+}

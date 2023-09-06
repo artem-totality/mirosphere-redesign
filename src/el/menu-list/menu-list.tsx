@@ -13,6 +13,9 @@ export const MenuList = () => {
 			<a href="/clients" className="menu-item">
 				Клиентам
 			</a>
+			<a href="/rules" className="menu-item">
+				Устав
+			</a>
 			<a href="/contacts" className="menu-item">
 				Контакты
 			</a>
