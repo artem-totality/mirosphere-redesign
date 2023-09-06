@@ -1,4 +1,5 @@
 @import '@/styles/_variables';
+@import '@/styles/_mixins';
 
 .bm-burger-button,
 .bm-overlay,
@@ -9,9 +10,11 @@
 .bm-burger-button {
 	position: fixed;
 	width: 36px;
-	height: 30px;
+	height: 25px;
 	right: $half-gap;
-	top: 36px;
+	top: 39px;
+	background: $background-color;
+	backdrop-filter: blur(6px);
 }
 
 /* Color/shape of burger icon bars */

@@ -8,7 +8,7 @@ export const Development = () => {
 	return (
 		<section>
 			<Container>
-				<SectionTitle>Главная страница в процессе разработки</SectionTitle>
+				<SectionTitle>Эта страница в процессе разработки</SectionTitle>
 				<div className={styles.development}>
 					<Card>
 						<a href="/partners">

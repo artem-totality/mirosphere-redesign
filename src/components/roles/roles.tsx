@@ -16,18 +16,20 @@ export const Roles = () => {
 								<div className={styles.role}>
 									<div className={styles.role__top}>
 										<div className={styles.role__img}>
-											<img src="/roles/cat1.jpg" alt="Дюймовочка" />
+											<img src="/roles/cat1.jpg" alt="Друг" />
 										</div>
-										<div className={styles.role__title}>Дюймовочка</div>
+										<div className={styles.role__title}>Друг</div>
 									</div>
 									<div className={styles.role__info}>
-										Крохотная девочка, героиня одноимённой сказки датского
-										поэта, путешественника и сказочника Х. К. Андерсена.
+										Друг - полноправный участник сообщества. Человек, имеющий
+										равное с другими право голоса в принятии важных для компании
+										решений. Активный элемент системы, имеющий безусловную
+										значимость для "Миросферы".
 									</div>
 								</div>
 							</Card>
 						</div>
-						<div className={styles.roles__item}>
+						{/* <div className={styles.roles__item}>
 							<Card>
 								<div className={styles.role}>
 									<div className={styles.role__top}>
@@ -51,14 +53,13 @@ export const Roles = () => {
 								<div className={styles.role}>
 									<div className={styles.role__top}>
 										<div className={styles.role__img}>
-											<img src="/roles/cat6.jpg" alt="Серунчик" />
+											<img src="/roles/cat6.jpg" alt="Дюймовочка" />
 										</div>
-										<div className={styles.role__title}>Серунчик</div>
+										<div className={styles.role__title}>Дюймовочка</div>
 									</div>
 									<div className={styles.role__info}>
-										Это так называемый “caganer” — в переводе «какающий пастух»
-										или «серун». Это самый забавный и необычный рождественский
-										персонаж в Каталонии.
+										Крохотная девочка, героиня одноимённой сказки датского
+										поэта, путешественника и сказочника Х. К. Андерсена.
 									</div>
 								</div>
 							</Card>
@@ -78,7 +79,7 @@ export const Roles = () => {
 									</div>
 								</div>
 							</Card>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</Container>
