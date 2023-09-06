@@ -10,9 +10,9 @@ export const MenuList = () => {
 			<a href="/partners" className="menu-item">
 				Партнерам
 			</a>
-			<a href="/clients" className="menu-item">
+			{/* <a href="/clients" className="menu-item">
 				Клиентам
-			</a>
+			</a> */}
 			<a href="/contacts" className="menu-item">
 				Контакты
 			</a>

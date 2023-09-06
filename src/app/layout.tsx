@@ -20,12 +20,12 @@ export default function RootLayout({
 		<html lang="ru">
 			<body>
 				<div id="app-wrapper">
-					<BurgerMenu
+					{/* <BurgerMenu
 						className="burger-menu"
 						pageWrapId={'page-wrapper'}
 						outerContainerId={'app-wrapper'}
 						width={256}
-					/>
+					/> */}
 					<Header />
 					<div id="page-wrapper">
 						<>{children}</>
