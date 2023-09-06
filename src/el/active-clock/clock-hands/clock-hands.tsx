@@ -1,5 +1,3 @@
-'use client';
-
 import React, { useEffect, useMemo, useRef } from 'react';
 
 export interface IClockHands {
@@ -90,9 +88,9 @@ export const ClockHands: React.FC<IClockHands> = ({ slowTimeSpeed }) => {
 				strokeLinecap="round"
 				strokeWidth="5"
 				strokeMiterlimit="10"
-				transform={`rotate(${Math.floor(360 * (time.hours / 43200))},${
-					CENTER.x
-				},${CENTER.y})`}
+				transform={`rotate(${360 * (time.hours / 43200)},${CENTER.x},${
+					CENTER.y
+				})`}
 				x1={CENTER.x}
 				y1={CENTER.y}
 				x2={CENTER.x}
@@ -128,7 +126,7 @@ export const ClockHands: React.FC<IClockHands> = ({ slowTimeSpeed }) => {
 				x2={CENTER.x}
 				y2="130"
 			/>
-			{/* <g
+			<g
 				className="iconic-clock-second-hand"
 				id="iconic-anim-clock-second-hand"
 				transform={`rotate(${360 * (time.seconds / 60)},${CENTER.x},${
@@ -158,7 +156,7 @@ export const ClockHands: React.FC<IClockHands> = ({ slowTimeSpeed }) => {
 					cy={CENTER.y}
 					r="6"
 				/>
-			</g> */}
+			</g>
 
 			<defs>
 				<animateTransform

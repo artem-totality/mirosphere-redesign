@@ -11,14 +11,15 @@ export const PartnersContacts = () => {
 					<SectionTitle>Контакты:</SectionTitle>
 					<div className={styles['partners-contacts__info']}>
 						<div className={styles['partners-contacts__info-left']}>
-							Разработка web&#8209;приложений любой сложности под ключ
+							Присоединяйся к нашей команде. С нами интересно!
+							<b> ;&#8209;)</b>
 						</div>
 						<div className={styles['partners-contacts__info-right']}>
 							<div className={styles['partners-contacts__info-offer']}>
 								Мы всегда ищем <span>новых членов,</span> которые привнесут в
 								нашу команду энергию, креативность и страсть.
 								<span> Как вы думаете,</span> у вас есть то, что нужно? Будем
-								рады видеть <span>ваше резюме</span>!
+								рады видеть <span>ваш отклик</span>!
 							</div>
 							<form className={styles['partners-contacts__form']}>
 								<input
@@ -39,7 +40,7 @@ export const PartnersContacts = () => {
 									href="#"
 									className={styles['partners-contacts__form-file-upload']}
 								>
-									прикрепите ваше резюме
+									ваше резюме (опционально)
 								</a>
 								<button type="submit">Отправить</button>
 							</form>
