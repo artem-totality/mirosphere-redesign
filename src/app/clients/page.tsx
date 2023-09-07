@@ -1,5 +1,5 @@
-import { Development } from '@/components/development';
+import { Clients } from '@/components/clients';
 
 export default function ClientsPage() {
-	return <Development />;
+	return <Clients />;
 }

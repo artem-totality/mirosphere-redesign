@@ -1,0 +1,100 @@
+@import '@/styles/_variables';
+@import '@/styles/_mixins';
+
+.clients {
+	&__inner {
+		padding: 35px 0;
+	}
+	&__link {
+		margin: $big-gap auto $gap;
+		padding: 0 $gap;
+		@include button;
+		width: 160px;
+	}
+}
+
+.clients-products {
+	text-align: center;
+	&__subtitle {
+		margin: $gap 0 $big-gap;
+		@include section-subtitle;
+	}
+	&__info {
+		max-width: 900px;
+		margin: 0 auto;
+		@include section-info;
+	}
+	&__items {
+		display: flex;
+		padding-bottom: $gap;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: $gap;
+	}
+}
+
+.clients-product {
+	width: calc(33.3% - 2 / 3 * $gap);
+	min-height: 400px;
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+	&__img {
+		svg {
+			width: 64px;
+			height: 64px;
+			margin-bottom: $half-gap;
+		}
+	}
+	&__title {
+		margin-bottom: $big-gap;
+		@include section-subtitle;
+		font-size: 33px;
+		min-height: 75px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__info {
+		flex-grow: 1;
+		margin-bottom: $big-gap;
+	}
+	&__price {
+		@include section-info;
+		margin-bottom: $gap;
+		&::before {
+			content: 'от';
+			font-size: 20px;
+			margin-right: 7px;
+		}
+		&::after {
+			content: '\20BD';
+			margin-left: 5px;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.clients-products {
+		&__info {
+			max-width: 600px;
+		}
+	}
+	.clients-product {
+		width: calc(50% - $gap / 2);
+	}
+}
+
+@media (max-width: 600px) {
+	.clients-products {
+		&__items {
+			display: block;
+		}
+	}
+	.clients-product {
+		width: 100%;
+		margin-bottom: $gap;
+	}
+}
