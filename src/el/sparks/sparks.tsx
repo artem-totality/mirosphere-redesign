@@ -3,7 +3,7 @@ import styles from './sparks.module.scss';
 
 export const Sparks = () => {
 	return (
-		<>
+		<div>
 			<div className={styles.firefly}></div>
 			<div className={styles.firefly}></div>
 			<div className={styles.firefly}></div>
@@ -19,6 +19,6 @@ export const Sparks = () => {
 			<div className={styles.firefly}></div>
 			<div className={styles.firefly}></div>
 			<div className={styles.firefly}></div>
-		</>
+		</div>
 	);
 };
