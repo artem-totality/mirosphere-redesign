@@ -1309,3 +1309,11 @@
 		box-shadow: 0 0 2vw 0.4vw yellow;
 	}
 }
+
+@media (max-width: 600px) {
+	.firefly:nth-child(13),
+	.firefly:nth-child(14),
+	.firefly:nth-child(15) {
+		display: none;
+	}
+}
