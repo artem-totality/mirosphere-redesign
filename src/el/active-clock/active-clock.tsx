@@ -29,7 +29,7 @@ const ActiveClockIcon: React.FC<IActiveClockIcon> = ({
 			xmlnsXlink="http://www.w3.org/1999/xlink"
 			x="0px"
 			y="0px"
-			viewBox="0 0 500 500"
+			viewBox="25 0 450 475"
 			className={classes.clock__root}
 			xmlSpace="preserve"
 		>

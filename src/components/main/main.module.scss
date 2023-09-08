@@ -2,13 +2,16 @@
 @import '@/styles/_mixins';
 
 .main {
-	min-height: calc(100vh - 120px);
 	&__inner {
 		display: flex;
 	}
 	&__content {
-		min-width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		text-align: center;
+		min-width: 50%;
 	}
 	&__title {
 		@include section-liquid-title;
