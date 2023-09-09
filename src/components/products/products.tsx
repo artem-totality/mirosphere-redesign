@@ -14,7 +14,7 @@ export const Products = () => {
 		<section className={styles.products}>
 			<Container>
 				<div className={styles.products__inner}>
-					<SectionTitle>Наши проекты</SectionTitle>
+					<SectionTitle>Наши проекты:</SectionTitle>
 					<div className={styles.chess}>
 						<div className={styles.chess__subtitle}>
 							<Card>

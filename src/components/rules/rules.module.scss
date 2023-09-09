@@ -1,0 +1,33 @@
+@import '@/styles/_variables';
+@import '@/styles/_mixins';
+
+.rules {
+	&__inner {
+		padding: $big-gap 0;
+	}
+	&__paragraph {
+		padding: $half-gap;
+		text-align: justify;
+		text-indent: $big-gap;
+	}
+	&__h2 {
+		padding: $big-gap 0 $half-gap;
+		font-weight: 700;
+		text-align: center;
+	}
+	&__h3 {
+		padding: $gap;
+		font-weight: 700;
+		text-align: center;
+	}
+	&__h5 {
+		padding: calc($half-gap / 2);
+		text-align: center;
+	}
+}
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 600px) {
+}

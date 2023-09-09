@@ -19,6 +19,9 @@ export const MenuList = () => {
 			<a href="/contacts" className="menu-item">
 				Контакты
 			</a>
+			<a href="/404" className="menu-item menu-item--404">
+				404
+			</a>
 		</>
 	);
 };

@@ -3,7 +3,7 @@
 
 .promo {
 	&__inner {
-		padding: 35px 0;
+		padding: $big-gap 0;
 	}
 	&__title {
 		@include section-liquid-title;

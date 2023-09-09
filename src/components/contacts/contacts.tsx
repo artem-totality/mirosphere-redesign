@@ -9,7 +9,7 @@ export const Contacts = () => {
 		<section className={styles.contacts}>
 			<Container>
 				<div className={styles.contacts__inner}>
-					<SectionTitle>Контакты</SectionTitle>
+					<SectionTitle>Контакты:</SectionTitle>
 					<div className={styles.contacts__info}>
 						Разработка web&#8209;приложений любой сложности под ключ
 					</div>

@@ -9,7 +9,9 @@ export const Promo = () => {
 			<section className={styles.promo}>
 				<Container>
 					<div className={styles.promo__inner}>
-						<div className={styles.promo__title}>Разработка WEB-приложений</div>
+						<div className={styles.promo__title}>
+							Разработка WEB-приложений:
+						</div>
 						<div className={styles.promo__info}>
 							Разработка компьютерного программного обеспечения под ключ любой
 							сложности, для автоматизации бизнеса.
