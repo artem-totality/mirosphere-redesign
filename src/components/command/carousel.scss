@@ -1,0 +1,76 @@
+@import '@/styles/_variables';
+@import '@/styles/_mixins';
+
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+	opacity: 1;
+}
+
+.carousel.carousel-slider .control-prev.control-arrow {
+	top: auto;
+	bottom: 33px;
+	left: 40px;
+}
+
+.carousel.carousel-slider .control-next.control-arrow {
+	top: auto;
+	bottom: 33px;
+	left: 88px;
+	right: auto;
+}
+
+.carousel .control-next.control-arrow,
+.carousel .control-prev.control-arrow {
+	&::before {
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		line-height: 38px;
+		font-size: 24px;
+		color: $shady-main-color;
+		cursor: pointer;
+		@include element-decor;
+		border-width: 1px;
+	}
+	&:hover::before {
+		color: $main-color;
+		border-color: $main-color;
+	}
+}
+
+.carousel .control-prev.control-arrow {
+	&::before {
+		content: '<';
+	}
+}
+
+.carousel .control-next.control-arrow {
+	&::before {
+		content: '>';
+	}
+}
+
+.carousel .carousel-status {
+	top: auto;
+	right: auto;
+	left: 273px;
+	bottom: 44px;
+	font-size: 15px;
+	color: $shady-main-color;
+}
+
+.slide > div {
+	height: 100%;
+}
+
+@media (max-width: 900px) {
+	.carousel.carousel-slider .control-prev.control-arrow {
+		left: 20px;
+	}
+	.carousel.carousel-slider .control-next.control-arrow {
+		left: 68px;
+	}
+	.carousel .carousel-status {
+		left: 253px;
+	}
+}
