@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Container } from '@/el/container';
 import { MenuList } from '@/el/menu-list';
 import styles from './header.module.scss';
@@ -8,7 +9,7 @@ export const Header = () => {
 		<header className={styles.header}>
 			<Container>
 				<div className={styles.header__inner}>
-					<a href="/" className={styles.logo}>
+					<Link href="/" className={styles.logo}>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -75,7 +76,7 @@ export const Header = () => {
 							></path>
 						</svg>
 						<span className={styles.logo__title}>Миросфера</span>
-					</a>
+					</Link>
 					<nav className={styles.menu}>
 						<div className={styles.menu__list}>
 							<MenuList />

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Container } from '@/el/container';
 import { SectionTitle } from '@/el/section-title';
 import { Card } from '@/el/card';
@@ -89,9 +90,9 @@ export const Clients = () => {
 								</div>
 							</div>
 						</div>
-						<a href="/contacts" className={styles.clients__link}>
+						<Link href="/contacts" className={styles.clients__link}>
 							Заказать
-						</a>
+						</Link>
 					</div>
 				</Container>
 			</section>

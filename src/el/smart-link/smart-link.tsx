@@ -13,7 +13,7 @@ export const SmartLink = ({
 }: {
 	children: React.ReactNode;
 	href: string;
-	closeMenu: () => void;
+	closeMenu?: () => void;
 }) => {
 	const router = useRouter();
 	const pathname = usePathname();
@@ -26,7 +26,7 @@ export const SmartLink = ({
 	const handleClick = (e: React.MouseEvent<HTMLElement>) => {
 		e.preventDefault();
 		router.push(href);
-		closeMenu();
+		closeMenu && closeMenu();
 	};
 
 	return (

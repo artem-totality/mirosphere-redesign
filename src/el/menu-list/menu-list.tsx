@@ -1,7 +1,7 @@
 import React from 'react';
 import { SmartLink } from '@/el/smart-link';
 
-export const MenuList = ({ closeMenu }: { closeMenu: () => void }) => {
+export const MenuList = ({ closeMenu }: { closeMenu?: () => void }) => {
 	return (
 		<>
 			<SmartLink href="/" closeMenu={closeMenu}>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Container } from '@/el/container';
 import styles from './ufo.module.scss';
 
@@ -16,9 +17,9 @@ export const Ufo = () => {
 						<div className={styles.ufo__subtitle}>
 							Похоже эту страницу унесло НЛО...
 						</div>
-						<a href="/" className={styles.ufo__link}>
+						<Link href="/" className={styles.ufo__link}>
 							Главная страница
-						</a>
+						</Link>
 					</div>
 				</Container>
 			</section>

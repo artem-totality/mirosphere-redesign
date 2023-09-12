@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Container } from '@/el/container';
 import ActiveClock from '@/el/active-clock';
 import styles from './main.module.scss';
@@ -18,9 +19,9 @@ export const Main = () => {
 						<div className={styles.main__subtitle}>
 							Миросфера <span>- порядок жизни</span>
 						</div>
-						<a href="/contacts" className={styles.main__link}>
+						<Link href="/contacts" className={styles.main__link}>
 							С нами :)
-						</a>
+						</Link>
 					</div>
 					<div className={styles.clock}>
 						<ActiveClock
