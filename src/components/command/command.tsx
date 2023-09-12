@@ -25,6 +25,8 @@ export const Command = () => {
 							preventMovementUntilSwipeScrollTolerance={true}
 							swipeScrollTolerance={25}
 							statusFormatter={statusFormatter}
+							interval={11000}
+							autoPlay
 							infiniteLoop
 						>
 							<div className={styles.dev}>
@@ -107,6 +109,34 @@ export const Command = () => {
 											<a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%BD-%D0%B4%D0%B7%D0%B0-%D0%B4%D0%B7%D0%B0!">
 												©&nbsp;Кин-дза-дза
 											</a>
+										</div>
+										<div className={styles.dev__controls}></div>
+									</div>
+								</Card>
+							</div>
+							<div className={styles.dev}>
+								<Card>
+									<div className={styles.dev__inner}>
+										<div className={styles.dev__profile}>
+											<img
+												src="/command/totality.webp"
+												className={styles.dev__img}
+												alt="totality"
+											/>
+											<div className={styles.dev__name}>
+												@totality, Старший помощник Junior&apos;a ;)
+											</div>
+										</div>
+										<div className={styles.dev__info}>
+											<div className={styles.dev__text}>
+												Надёжно и безотказно. Если это вёрстка, то она будет
+												отлично работать и отображаться независимо от
+												устройства. От мобильного телефона, до 4K Smart TV. Если
+												это функционал, то он будет разумно и продуктивно
+												взаимодействовать с пользователем, независимо от его
+												действий.
+											</div>
+											<a href="https://t.me/totality7">@totality</a>
 										</div>
 										<div className={styles.dev__controls}></div>
 									</div>
