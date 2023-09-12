@@ -1,12 +1,17 @@
 'use client';
 
 import React from 'react';
+import dynamic from 'next/dynamic';
 
 import ActivityG from './activity-g';
-import ClockHands from './clock-hands';
+
 import PeopleG from './people-g';
 import ProjectsG from './projects-g';
 import classes from './active-clock.module.scss';
+
+const DynamicClockHands = dynamic(() => import('./clock-hands'), {
+	ssr: false,
+});
 
 interface IActiveClockIcon {
 	activityValue: number;
@@ -1238,12 +1243,12 @@ const ActiveClockIcon: React.FC<IActiveClockIcon> = ({
 				</g>
 			</g>
 			{slowTimeSpeed ? (
-				<ClockHands
+				<DynamicClockHands
 					key={`notCrazySpeed${slowTimeSpeed}`}
 					slowTimeSpeed={slowTimeSpeed}
 				/>
 			) : (
-				<ClockHands
+				<DynamicClockHands
 					key={`crazySpeed${slowTimeSpeed}`}
 					slowTimeSpeed={slowTimeSpeed}
 				/>
