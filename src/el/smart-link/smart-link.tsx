@@ -9,9 +9,11 @@ import styles from './smart-link.module.scss';
 export const SmartLink = ({
 	children,
 	href,
+	closeMenu,
 }: {
 	children: React.ReactNode;
 	href: string;
+	closeMenu: () => void;
 }) => {
 	const router = useRouter();
 	const pathname = usePathname();
@@ -24,6 +26,7 @@ export const SmartLink = ({
 	const handleClick = (e: React.MouseEvent<HTMLElement>) => {
 		e.preventDefault();
 		router.push(href);
+		closeMenu();
 	};
 
 	return (
