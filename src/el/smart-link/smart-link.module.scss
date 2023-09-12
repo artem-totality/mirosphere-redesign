@@ -3,6 +3,20 @@
 .menu-item {
 	display: block;
 	padding: $half-gap 0;
+	&--active {
+		span {
+			position: relative;
+			&::after {
+				content: '';
+				display: inline-block;
+				position: absolute;
+				left: 0;
+				bottom: -5px;
+				width: 100%;
+				border-bottom: 2px solid $main-color;
+			}
+		}
+	}
 	& + .menu-item {
 		margin-left: $gap;
 	}
