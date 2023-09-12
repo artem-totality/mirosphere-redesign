@@ -23,16 +23,10 @@ export const Products = () => {
 								</a>
 							</Card>
 						</div>
-						<img
-							src="/chess/chess1.webp"
-							alt="Турнирная таблица"
-							className={styles.chess__img1}
-						/>
-						<img
-							src="/chess/chess1-mob.webp"
-							alt="Турнирная таблица"
-							className={styles['chess__img1--mobile']}
-						/>
+						<picture className={styles.chess__img1}>
+							<source media="(min-width: 601px)" srcSet="/chess/chess1.webp" />
+							<img src="/chess/chess1-mob.webp" alt="Турнирная таблица" />
+						</picture>
 						<img
 							src="/chess/chess4.webp"
 							alt="Главный экран"
@@ -59,16 +53,10 @@ export const Products = () => {
 								Жеребьевка на большом экране понятна старикам и детям!
 							</Card>
 						</div>
-						<img
-							src="/chess/chess3.webp"
-							alt="Жеребьёвка"
-							className={styles.chess__img3}
-						/>
-						<img
-							src="/chess/chess3-mob.webp"
-							alt="Жеребьёвка"
-							className={styles['chess__img3--mobile']}
-						/>
+						<picture className={styles.chess__img3}>
+							<source media="(min-width: 601px)" srcSet="/chess/chess3.webp" />
+							<img src="/chess/chess3-mob.webp" alt="Турнирная таблица" />
+						</picture>
 						<div className={styles.chess__info3}>
 							<Card>
 								Мы создали простой и продуманный сервис для проведения шахматных
