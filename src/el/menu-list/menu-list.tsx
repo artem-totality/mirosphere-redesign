@@ -19,7 +19,7 @@ export const MenuList = ({ closeMenu }: { closeMenu?: () => void }) => {
 			<SmartLink href="/contacts" closeMenu={closeMenu}>
 				Контакты
 			</SmartLink>
-			<SmartLink href="/404" closeMenu={closeMenu}>
+			<SmartLink href="/ufo" closeMenu={closeMenu}>
 				404
 			</SmartLink>
 		</>

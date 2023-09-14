@@ -25,7 +25,7 @@ export const Command = () => {
 							preventMovementUntilSwipeScrollTolerance={true}
 							swipeScrollTolerance={25}
 							statusFormatter={statusFormatter}
-							interval={11000}
+							interval={15000}
 							autoPlay
 							infiniteLoop
 						>
