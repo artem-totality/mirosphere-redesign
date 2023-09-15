@@ -8,6 +8,10 @@
 	animation: ease 200s alternate infinite;
 	pointer-events: none;
 	z-index: -1;
+	@media (max-width: 900px) {
+		width: 0.5vw;
+		height: 0.5vw;
+	}
 	@media (max-width: 600px) {
 		width: 0.8vw;
 		height: 0.8vw;
